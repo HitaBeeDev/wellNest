@@ -25,6 +25,7 @@ export default function AboutUs() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
+          whileHover={{ scale: 1.03 }}
           className="row-span-2"
         >
           <AboutWellNest />
@@ -37,7 +38,7 @@ export default function AboutUs() {
           className="lg:grid lg:-mt-10 lg:grid-cols-2 flex flex-col gap-3"
         >
           <div
-            className="bg-cover bg-center rounded-3xl"
+            className="bg-cover bg-center rounded-3xl hover:scale-105 transition-all duration-700"
             style={{ backgroundImage: `url(${qouteBg})` }}
           >
             <p className="mt-2 text-sm font-bold leading-relaxed text-color2 p-6 pr-24">
@@ -46,7 +47,7 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <div className="text-sm bg-color3 text-color6 p-10 rounded-3xl">
+          <div className="text-sm bg-color3 text-color6 p-10 rounded-3xl hover:scale-105 transition-all duration-700">
             <p>
               At WellNest, every breath is a reminder to cherish the harmony of
               mind, body, and soul.

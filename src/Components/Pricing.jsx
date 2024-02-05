@@ -1,34 +1,43 @@
-import PricingMotion from "./PricingMotion";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+
+import { FreeMode, Pagination } from "swiper/modules";
+
+const ServiceData = [1, 2, 3, 4, 5];
 
 export default function Pricing() {
   return (
-    <div className="mt-28 lg:grid lg:grid-cols-4">
-      <div className="hidden lg:grid lg:col-span-3">
-        <PricingMotion />
-      </div>
-
-      <div className="lg:hidden grid col-span-3">
-        <p>
-          NORMAL PRICE CARDS Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Beatae rem expedita praesentium perferendis, facilis eum dolorem
-          illo aperiam, labore, voluptas a soluta officiis eligendi. Sequi
-          ratione nulla praesentium enim sint!
-        </p>
-      </div>
-
-      <div className="hidden lg:grid lg:col-span-1">
-        1111 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        distinctio, officia rerum libero incidunt ipsa iure fugiat doloribus,
-        deleniti non cumque illum fuga eos aliquid explicabo nostrum quasi hic
-        omnis?
-      </div>
-
-      <div className="lg:hidden grid col-span-3">
-        NORMAL REVIEW CARDS Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Maxime distinctio, officia rerum libero incidunt ipsa iure fugiat
-        doloribus, deleniti non cumque illum fuga eos aliquid explicabo nostrum
-        quasi hic omnis?
-      </div>
+    <div className="flex items-center justify-center flex-col">
+      <Swiper
+        breakpoints={{
+          340: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          700: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        }}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="max-w-[90%] lg:max-w-[80%]"
+      >
+        {ServiceData.map((item) => (
+          <SwiperSlide key={item}>
+            <div className="flex flex-col gap-6 mb-20 group relative shadow-lg  rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer">
+              <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
+              <div className="relative flex flex-col gap-3">{item}</div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }
