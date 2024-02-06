@@ -5,6 +5,7 @@ import fitness from "../assets/fitness.jpg";
 import therapy from "../assets/therapy.jpg";
 import diet from "../assets/diet.jpg";
 import care from "../assets/care.jpg";
+import cardTitles from "./cardTitles";
 
 const OpenCards = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -24,17 +25,13 @@ const OpenCards = () => {
 
   const cardImages = [yoga, fitness, therapy, diet, care];
 
-  const cardTitles = [
-    "Yoga Sessions",
-    "Personal Fitness Plans",
-    "Mental Wellness Therapy",
-    "Balanced Diet Advice",
-    "Self-Care Practices",
-  ];
-
   return (
     <section>
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+      >
         <div className="hidden mt-12 lg:flex justify-center items-center gap-10">
           {cardTitles.map((title, index) => (
             <motion.div
@@ -83,7 +80,7 @@ const OpenCards = () => {
             Schedule Your First Appointment
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

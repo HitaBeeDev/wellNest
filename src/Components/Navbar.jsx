@@ -4,14 +4,7 @@ import Logo from "../assets/logo.png";
 import Menu from "../assets/menu.png";
 import User from "../assets/user4.png";
 import AuthModal from "./AuthModal";
-
-const navLinks = [
-  { id: "about", name: "About Us" },
-  { id: "services", name: "Our Services" },
-  { id: "pricing", name: "Pricing" },
-  { id: "qa", name: "QA" },
-  { id: "contacts", name: "Contacts" },
-];
+import navLinks from "./navLinks";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -36,7 +29,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between cursor-pointer items-center relative transition-all duration-1000">
+    <motion.nav
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="flex justify-between cursor-pointer items-center relative transition-all duration-1000"
+    >
       <img
         src={Logo}
         alt="Logo"
@@ -56,7 +54,8 @@ export default function Navbar() {
             className="text-color2 p-1 m-5 lg:p-1 lg:m-1 hover:scale-105 hover:border-b-2 hover:border-color2 transition duration-800"
           >
             <motion.a
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection(link.id)}
             >
               {link.name}
@@ -76,15 +75,16 @@ export default function Navbar() {
           <AuthModal isOpen={isModalOpen} onClose={toggleModal} />
         </div>
 
-        <img
+        <motion.img
           src={Menu}
           alt="Menu Button"
-          className={`lg:hidden w-5 lg:w-28 hover:scale-110 transition duration-500 ${
-            showMenu ? "rotate-90" : "rotate-0"
-          }`}
+          whileHover={{ scale: 1.1 }}
+          animate={{ rotate: showMenu ? 90 : 0 }}
+          transition={{ duration: 0.2 }}
+          className="lg:hidden w-5 lg:w-28 hover:scale-110 transition duration-500"
           onClick={toggleMenu}
         />
       </div>
-    </nav>
+    </motion.nav>
   );
 }
