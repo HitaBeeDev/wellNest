@@ -3,6 +3,8 @@ import OpenCards from "./Components/OpenCards";
 import OurServices from "./Components/OurServices";
 import AboutUs from "./Components/AboutUs";
 import Pricing from "./Components/Pricing";
+import FAQ from "./Components/FAQ";
+import Testimonials from "./Components/Testimonials";
 
 //  --------------------------
 
@@ -20,10 +22,10 @@ import Pricing from "./Components/Pricing";
     name: "✅ Services",
   },
   {
-    name: "Pricing",
+    name: "✅ Pricing",
   },
   {
-    name: "FAQs",
+    name: "✅ FAQs",
   },
   {
     name: "Testimonials",
@@ -53,6 +55,10 @@ export default function App() {
       <OurServices />
 
       <Pricing />
+
+      <FAQ />
+
+      <Testimonials />
     </div>
   );
 }

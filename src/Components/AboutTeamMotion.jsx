@@ -39,7 +39,7 @@ export default function AboutTeamMotion() {
             style={{ minHeight: `${itemHeight}px` }}
             whileTap={{ scale: 0.9 }}
           >
-            <div className="backdrop-blur-sm bg-gray bg-opacity-10 shadow-md rounded-2xl p-3 flex lg:flex-row flex-col items-center gap-3">
+            <div className="backdrop-blur-sm bg-gray bg-opacity-20 shadow-md rounded-2xl p-3 flex lg:flex-row flex-col items-center gap-3">
               <motion.img
                 src={src}
                 alt="Avatar"
