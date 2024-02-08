@@ -5,6 +5,7 @@ import AboutUs from "./Components/AboutUs";
 import Pricing from "./Components/Pricing";
 import FAQ from "./Components/FAQ";
 import Testimonials from "./Components/Testimonials";
+import ContactUs from "./Components/ContactUs";
 
 //  --------------------------
 
@@ -28,7 +29,7 @@ import Testimonials from "./Components/Testimonials";
     name: "✅ FAQs",
   },
   {
-    name: "Testimonials",
+    name: "✅ Testimonials",
   },
   {
     name: "Contact Us",
@@ -59,6 +60,8 @@ export default function App() {
       <FAQ />
 
       <Testimonials />
+
+      <ContactUs />
     </div>
   );
 }

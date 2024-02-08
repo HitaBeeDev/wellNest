@@ -25,7 +25,7 @@ const ServiceData = [
   },
   {
     id: 3,
-    title: "Premium Subscription",
+    title: "Gold Subscription",
     description: "Choose any 3 services with a 1-week trial for",
     span: "$199/month",
     benefits: [

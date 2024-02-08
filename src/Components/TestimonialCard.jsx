@@ -1,198 +1,153 @@
 import user1 from "../assets/user1.jpg";
-
-const TestimonialsData = [
-  {
-    name: "Alex Johnson",
-    receivedService: "Normal Subscription",
-    reviewHeader: "Transformative Wellness Journey with My Chosen Services",
-    reviewDescription:
-      "Choosing the Normal Subscription was a game-changer for me. Having the flexibility to select two services each month allowed me to tailor my wellness routine perfectly. The value for the price is incredible, and I've never felt better!",
-  },
-  {
-    name: "Samantha Lee",
-    receivedService: "Premium Subscription",
-    reviewHeader:
-      "Unparalleled Support with Premium Care, Every Step of the Way",
-    reviewDescription:
-      "The Premium Subscription not only met but exceeded my expectations. The week-long trial was a fantastic way to get acquainted with the offerings, and I've been hooked ever since. The exclusive features and holistic support are worth every penny.",
-  },
-  {
-    name: "Chris Rivera",
-    receivedService: "Premium Subscription",
-    reviewHeader: "A Holistic Approach to Wellness That Truly Cares",
-    reviewDescription:
-      "Opting for the Premium Subscription has provided me with a comprehensive wellness package that's tailored to my needs. The trial period was a great introduction, and the continued access to exclusive content has made all the difference in my wellness journey.",
-  },
-  {
-    name: "Jordan Kim",
-    receivedService: "Individual Yoga Sessions",
-    reviewHeader: "Personalized Yoga Journey That Respects My Pace and Goals",
-    reviewDescription:
-      "The Individual Yoga Sessions have been transformative. Each session is tailored to my needs, helping me progress at my own pace. The expert guidance has improved my posture, flexibility, and mental peace significantly.",
-  },
-  {
-    name: "Taylor Cruz",
-    receivedService: "Personal Fitness Plans",
-    reviewHeader: "Custom Fitness Plan That Pushes Me to My Best Self",
-    reviewDescription:
-      "The Personal Fitness Plans are exactly what I needed to stay motivated and on track with my fitness goals. The bi-weekly check-ins are a great touch, offering personalized guidance and support that make a real difference.",
-  },
-  {
-    name: "Morgan Bailey",
-    receivedService: "Mental Wellness Therapy Sessions",
-    reviewHeader:
-      "Compassionate and Effective Therapy for Life's Ups and Downs",
-    reviewDescription:
-      "Weekly Mental Wellness Therapy Sessions have been a cornerstone of my emotional well-being. Each session is tailored to my personal needs, providing effective techniques and support for coping with stress and fostering personal growth.",
-  },
-  {
-    name: "Casey Smith",
-    receivedService: "Diet Advice",
-    reviewHeader: "Expert Diet Advice That's Transforming My Health and Habits",
-    reviewDescription:
-      "The Diet Advice service has been incredibly beneficial. Weekly sessions offer personalized guidance that's helping me make healthier choices and understand my body's needs better. It's been a judgment-free journey towards better health.",
-  },
-  {
-    name: "Jamie Taylor",
-    receivedService: "Self-Care Services",
-    reviewHeader: "Elevating My Routine with Tailored Self-Care Practices",
-    reviewDescription:
-      "The Self-Care Services have introduced me to customized activities that nurture my body, mind, and soul. The monthly challenges keep me engaged and motivated, helping me achieve a balanced and fulfilling lifestyle.",
-  },
-  {
-    name: "Riley Jordan",
-    receivedService: "Personal Fitness Plans",
-    reviewHeader: "Achieving Fitness Goals with Personalized Plans and Support",
-    reviewDescription:
-      "My experience with the Personal Fitness Plans has been nothing short of amazing. The personalized workouts and the supportive community have empowered me to reach new heights in my fitness journey.",
-  },
-  {
-    name: "Drew Parker",
-    receivedService: "Mental Wellness Therapy Sessions",
-    reviewHeader: "Finding Balance and Support Through Tailored Therapy",
-    reviewDescription:
-      "Engaging in the Mental Wellness Therapy Sessions has provided me with invaluable support and techniques to manage stress and emotional challenges. It's been a pivotal part of my journey to mental wellness and self-discovery.",
-  },
-];
+import user2 from "../assets/user2.jpg";
+import user3 from "../assets/user3.jpg";
+import user4 from "../assets/user4.jpg";
+import user5 from "../assets/user5.jpg";
 
 export default function TestimonialCard() {
   return (
-    <div className="grid grid-cols-4 grid-rows-3 gap-4 mt-28">
-      <div className="bg-color2 col-span-2">
-        <div>
-          <img className="w-10 h-10" src={user1} />
-          <div>Nam</div>
-          <div>Almis oldugu servis</div>
+    <div className="flex flex-col gap-5 lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-4 sm:mt-28 -mt-5">
+      <div className="bg-color8 col-span-2 rounded-xl shadow-xl p-5">
+        <div className="flex flex-row gap-3 items-center">
+          <img className="w-10 h-10 rounded-md" src={user1} />
+          <div className="flex flex-col gap-1">
+            <p className="text-sm font-[400] text-color1">Samantha Lee</p>
+            <p className="text-xs text-color1 opacity-50">
+              Premium Subscription
+            </p>
+          </div>
         </div>
 
-        <div>
-          <p>
-            Header :: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <div className="mt-3">
+          <p className="text-md text-color1 tracking-wider font-normal">
+            Great Experience: They really went above and beyond with their care
+            and support. Felt very personalized and professional!
           </p>
 
-          <p>
-            Description :: Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-color2">
-        <div>
-          <img className="w-10 h-10" src={user1} />
-          <div>Nam</div>
-          <div>Almis oldugu servis</div>
-        </div>
-
-        <div>
-          <p>
-            Header :: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-
-          <p>
-            Description :: Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit.
+          <p className="text-xs mt-2 text-color3 font-light tracking-wider leading-relaxed">
+            "The premium subscription exceeded my expectations right from the
+            start. The introductory week offered a great glimpse into its
+            extensive services, initiating a personalized wellness journey. It's
+            not just the exclusive features that impress but also the
+            exceptional support and care provided. Since joining, I've seen a
+            significant boost in my overall well-being, proving the investment
+            truly worthwhile. The detailed attention and personalized touch have
+            greatly enhanced my daily life, making this subscription an
+            excellent choice for enhancing wellness."
           </p>
         </div>
       </div>
 
-      <div className="row-span-3 bg-color2">
-        <div>
-          <img className="w-10 h-10" src={user1} />
-          <div>Nam</div>
-          <div>Almis oldugu servis</div>
+      <div className="bg-color4 rounded-xl shadow-xl p-5">
+        <div className="flex flex-row gap-3 items-center">
+          <img className="w-10 h-10 rounded-md" src={user2} />
+          <div className="flex flex-col gap-1">
+            <p className="text-sm font-[400] text-color7">Alex Johnson</p>
+            <p className="text-xs text-color7 opacity-50">
+              Normal Subscription
+            </p>
+          </div>
         </div>
 
-        <div>
-          <p>
-            Header :: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <div className="mt-3">
+          <p className="text-md text-color8 tracking-wider font-normal">
+            Fantastic Service: Exceptionally personalized and professional care!
           </p>
 
-          <p>
-            Description :: Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Description :: Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Description :: Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Description :: Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Description :: Lorem ipsum, dolor
-            sit amet consectetur adipisicing elit. Description :: Lorem ipsum,
-            dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-color2">
-        <div>
-          <img className="w-10 h-10" src={user1} />
-          <div>Nam</div>
-          <div>Almis oldugu servis</div>
-        </div>
-
-        <div>
-          <p>
-            Header :: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-
-          <p>
-            Description :: Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit.
+          <p className="text-xs mt-2 text-color8 font-light tracking-wider leading-relaxed">
+            "The $99/month normal subscription is like having a wellness buddy!
+            You get to pick 2 services you love, enjoy fixed fees, personalized
+            attention, and no pesky long-term contracts. It's the perfect fit
+            for a flexible and friendly wellness journey!"
           </p>
         </div>
       </div>
 
-      <div className="col-span-2 bg-color2">
-        <div>
-          <img className="w-10 h-10" src={user1} />
-          <div>Nam</div>
-          <div>Almis oldugu servis</div>
+      <div className="lg:row-span-3 bg-color7 rounded-xl shadow-xl h-fit p-5">
+        <div className="flex flex-row gap-3 items-center">
+          <img className="w-10 h-10 rounded-md" src={user3} />
+          <div className="flex flex-col gap-1">
+            <p className="text-sm font-[400] text-color1">Jordan Kim</p>
+            <p className="text-xs text-color1 opacity-50">Gold Subscription</p>
+          </div>
         </div>
 
-        <div>
-          <p>
-            Header :: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <div className="mt-3">
+          <p className="text-md text-color1 tracking-wider font-normal">
+            Exceptional Service: The Gold Subscription went above and beyond,
+            exceeding all expectations with their unparalleled care and support!
+            Their friendly approach, personalized attention, and professional
+            service truly stood out.
           </p>
 
-          <p>
-            Description :: Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit.
+          <p className="text-xs mt-4 text-color3 font-light tracking-wider leading-relaxed">
+            "After trying the Gold Subscription, I was pleasantly surprised. At
+            $199/month, you can select 3 services for a personalized wellness
+            package. The 1-week trial provided a great overview of the available
+            services, making it easy to tailor my wellness journey. I was
+            impressed not only by the exclusive features but also by the
+            exceptional support and care. Since joining, I've seen a significant
+            improvement in my well-being. The attention to detail and
+            personalized approach have truly enriched my daily life. With
+            holistic support across various wellness areas, this subscription is
+            definitely worth it. I highly recommend it to anyone looking to
+            enhance their wellness journey."
           </p>
         </div>
       </div>
 
-      <div className="bg-color2 col-span-3">
-        <div>
-          <img className="w-10 h-10" src={user1} />
-          <div>Nam</div>
-          <div>Almis oldugu servis</div>
+      <div className="bg-color5 rounded-xl shadow-xl p-5">
+        <div className="flex flex-row gap-3 items-center">
+          <img className="w-10 h-10 rounded-md" src={user4} />
+          <div className="flex flex-col gap-1">
+            <p className="text-sm font-[400] text-color7">Chris Rivera</p>
+            <p className="text-xs text-color7 opacity-50">
+              Mental Wellness Therapy Sessions
+            </p>
+          </div>
         </div>
 
-        <div>
-          <p>
-            Header :: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <div className="mt-3">
+          <p className="text-md text-color8 tracking-wider font-normal">
+            My Experience with Therapy Sessions: A Journey to Mental Wellness
           </p>
 
-          <p>
-            Description :: Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit.
+          <p className="text-xs mt-2 text-color8 font-light tracking-wider leading-relaxed">
+            Starting Mental Wellness Therapy Sessions at $129 has been
+            life-changing. Weekly, I receive personalized sessions with
+            effective techniques for emotional well-being. The support for
+            personal growth is exceptional.
+          </p>
+        </div>
+      </div>
+
+      <div className="col-span-2 rounded-xl shadow-xl p-5 bg-color6">
+        <div className="flex flex-row gap-3 items-center">
+          <img className="w-10 h-10 rounded-md" src={user5} />
+          <div className="flex flex-col gap-1">
+            <p className="text-sm font-[400] text-color7">Morgan Bailey</p>
+            <p className="text-xs text-color7 opacity-50">Diet Advice</p>
+          </div>
+        </div>
+
+        <div className="mt-3">
+          <p className="text-md text-color8 tracking-wider font-normal">
+            My Diet Advice Experience: Transforming my Relationship with Food
+            for a Healthier Lifestyle Journey
+          </p>
+
+          <p className="text-xs mt-2 text-color8 font-light tracking-wider leading-relaxed">
+            My Diet Advice Journey: Transforming How I Approach Food - Week
+            after week, investing just $129 per session, I discovered that these
+            sessions offered more than just dietary guidelines; they became
+            transformative sanctuaries where I unraveled the intricate web of my
+            relationship with food, exploring the depths of emotional triggers
+            and uncovering profound insights into my eating behaviors. Delving
+            into emotional aspects, they equipped me with effective techniques
+            beyond mere food choices, empowering me to navigate cravings and
+            emotional eating patterns with grace and self-awareness. Through
+            this journey, I've not only transformed my eating habits but also
+            gained invaluable insights into holistic well-being.
           </p>
         </div>
       </div>
