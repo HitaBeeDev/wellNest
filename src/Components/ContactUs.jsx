@@ -4,7 +4,7 @@ import ContactUsInfo from "./ContactUsInfo";
 
 export default function ContactUs() {
   return (
-    <div className="mt-28 grid grid-cols-2 gap-10 items-center">
+    <div id="contactUs" className="mt-28 grid grid-cols-2 gap-10 items-center">
       <div>
         <ContactUsForm />
       </div>
