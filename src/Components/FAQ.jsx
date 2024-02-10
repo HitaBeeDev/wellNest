@@ -1,6 +1,6 @@
 import { useState } from "react";
 import faqData from "./faqData";
-import backgroundImage1 from "../Assets/backgroundImage1.jpg";
+import backgroundImage1 from "../assets/backgroundImage1.jpg";
 import faqArrow from "../assets/faqArrow.png";
 
 export default function FAQ() {
