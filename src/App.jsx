@@ -10,8 +10,8 @@ import Footer from "./Components/Footer";
 
 export default function App() {
   return (
-    <div>
-      <div className="overflow-hidden scroll-smooth pl-10 pr-10 pt-10 xl:pl-28 xl:pr-28 xl:pt-12 bg-color1">
+    <div className="bg-color1">
+      <div className="overflow-hidden scroll-smooth pl-10 pr-10 pt-10 xl:pl-28 xl:pr-28 xl:pt-12">
         <Navbar />
 
         <OpenCards />

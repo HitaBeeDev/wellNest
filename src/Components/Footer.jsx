@@ -1,74 +1,57 @@
 import logoFooter from "../assets/logow.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import socialLinks from "./socialLinks";
+import navLinks from "./navLinks";
 
 export default function Footer() {
-  const links = [
-    { id: "about", name: "About Us" },
-    { id: "services", name: "Our Services" },
-    { id: "pricing", name: "Pricing" },
-    { id: "faq", name: "FAQ" },
-    { id: "testimonials", name: "Testimonials" },
-    { id: "contactUs", name: "Contact Us!" },
-  ];
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
-    <nav className="bg-color2">
+    <footer className="bg-color2 mt-28 flex flex-col justify-between gap-10 items-center p-10">
       <div>
-        <img src={logoFooter} />
+        <img className="w-40" src={logoFooter} alt="Logo" />
       </div>
 
       <div>
-        {links.map((link) => (
-          <a key={link.id} href={`#${link.id}`}>
+        <p className="text-sm text-color3">
+          WellNest, your go-to sanctuary for holistic well-being, where your
+          health and happiness are our foremost priorities.
+        </p>
+      </div>
+
+      <div className="flex lg:flex-row flex-col gap-5 lg:gap-10">
+        {navLinks.map((link) => (
+          <button
+            className="text-sm text-center mt-5 hover:text-color7 transition-all duration-500 text-color1"
+            key={link.id}
+            onClick={() => scrollToSection(link.id)}
+          >
             {link.name}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-5 flex flex-row gap-6">
+        {socialLinks.map((link, index) => (
+          <a
+            key={index}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={link.className}
+          >
+            <FontAwesomeIcon icon={link.icon} size="1x" />
           </a>
         ))}
       </div>
-      {/* <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between">
-          <div className="flex space-x-7">
-            <div>
-              <a href="#" className="flex items-center py-4 px-2">
-                <span className="font-semibold text-gray-500 text-lg">
-                  BrandName
-                </span>
-              </a>
-            </div>
-
-            <div className="hidden md:flex items-center space-x-1">
-              {links.map((link) => (
-                <a
-                  key={link.id}
-                  href={`#${link.id}`}
-                  className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-                >
-                  {link.name}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-3 ">
-            <a
-              href="#"
-              className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300"
-            >
-              FaFacebookF
-            </a>
-            <a
-              href="#"
-              className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300"
-            >
-              FaInstagram
-            </a>
-            <a
-              href="#"
-              className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300"
-            >
-              FaTwitter
-            </a>
-          </div>
-        </div>
-      </div> */}
-    </nav>
+    </footer>
   );
 }

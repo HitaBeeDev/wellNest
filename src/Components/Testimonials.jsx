@@ -8,7 +8,7 @@ export default function Testimonials() {
   return (
     <div
       id="testimonials"
-      className="flex flex-col gap-5 lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-4 sm:mt-28 -mt-5"
+      className="flex flex-col gap-5 lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-4 sm:mt-28 mt-10"
     >
       <div className="bg-color8 col-span-2 rounded-xl shadow-xl p-5">
         <div className="flex flex-row gap-3 items-center">

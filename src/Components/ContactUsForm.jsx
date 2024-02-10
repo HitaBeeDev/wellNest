@@ -2,7 +2,7 @@ import Input from "./Input";
 
 export default function ContactUsForm() {
   return (
-    <div className="flex flex-col mb-10 bg-color7 p-10 rounded-xl shadow-lg">
+    <div className="flex flex-col mb-10 bg-color7 lg:p-10 p-6 rounded-xl shadow-lg">
       <div>
         <p className="text-color1 text-xs font-medium">
           Feel free to reach out
@@ -19,7 +19,7 @@ export default function ContactUsForm() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 mt-10 w-9/12">
+      <div className="flex flex-col gap-6 mt-10 lg:w-9/12 w-full">
         <Input label="Name" id="name" required />
         <Input label="Email" id="email" type="email" required />
         <div className="flex flex-col gap-2">
@@ -31,8 +31,9 @@ export default function ContactUsForm() {
           />
         </div>
       </div>
+
       <div className="mt-10 flex justify-center h-11">
-        <button className="text-sm w-5/12 rounded-xl font-semibold transition-all duration-500 bg-color1 text-color8 hover:bg-color3 hover:text-color7">
+        <button className="text-sm lg:w-5/12 w-7/12 rounded-xl font-semibold transition-all duration-500 bg-color1 text-color8 hover:bg-color3 hover:text-color7">
           Send!
         </button>
       </div>
