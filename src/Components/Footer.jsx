@@ -1,3 +1,5 @@
+import logoFooter from "../assets/logow.png";
+
 export default function Footer() {
   const links = [
     { id: "about", name: "About Us" },
@@ -9,8 +11,19 @@ export default function Footer() {
   ];
 
   return (
-    <nav className="bg-white shadow-lg">
-      <div className="max-w-6xl mx-auto px-4">
+    <nav className="bg-color2">
+      <div>
+        <img src={logoFooter} />
+      </div>
+
+      <div>
+        {links.map((link) => (
+          <a key={link.id} href={`#${link.id}`}>
+            {link.name}
+          </a>
+        ))}
+      </div>
+      {/* <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between">
           <div className="flex space-x-7">
             <div>
@@ -33,7 +46,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          {/* Social Icons */}
+
           <div className="hidden md:flex items-center space-x-3 ">
             <a
               href="#"
@@ -55,7 +68,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 }
