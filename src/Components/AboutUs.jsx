@@ -1,5 +1,5 @@
 import AboutTeamMotion from "./AboutTeamMotion";
-import teamBg8 from "../Assets/teamBg8.jpg";
+import teamBg8 from "../assets/teamBg8.jpg";
 import AboutWellNest from "./AboutWellNest";
 import qouteBg from "../Assets/bg1.jpg";
 import { motion } from "framer-motion";
