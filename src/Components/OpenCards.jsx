@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import cardTitles from "./cardTitles";
 import yoga from "../assets/yoga.jpg";
 import fitness from "../assets/fitness.jpg";
 import therapy from "../assets/therapy.jpg";
 import diet from "../assets/diet.jpg";
 import care from "../assets/care.jpg";
-import cardTitles from "./cardTitles";
 
 const OpenCards = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);

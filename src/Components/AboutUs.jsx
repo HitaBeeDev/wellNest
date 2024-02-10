@@ -1,7 +1,7 @@
 import AboutTeamMotion from "./AboutTeamMotion";
-import img from "../assets/img.jpg";
+import backgroundImage1 from "../assets/backgroundImage1.jpg";
+import backgroundImage2 from "../Assets/backgroundImage2.jpg";
 import AboutWellNest from "./AboutWellNest";
-import qouteBg from "../Assets/bg1.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -31,7 +31,7 @@ export default function AboutUs() {
     >
       <motion.div
         className="lg:bg-cover lg:bg-center hidden rounded-3xl p-5 w-fit lg:flex justify-center"
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url(${backgroundImage1})` }}
       >
         <AboutTeamMotion />
       </motion.div>
@@ -44,7 +44,7 @@ export default function AboutUs() {
         <div className="lg:grid lg:-mt-10 lg:grid-cols-2 flex flex-col gap-3">
           <motion.div
             className="bg-cover bg-center rounded-3xl transition-all duration-700"
-            style={{ backgroundImage: `url(${qouteBg})` }}
+            style={{ backgroundImage: `url(${backgroundImage2})` }}
           >
             <p className="mt-2 text-sm font-bold leading-relaxed text-color2 p-6 pr-24">
               "Nourish your body, feed your soul, and watch your wellness

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import YogaSessions from "./YogaSessions";
 import FitMentDietCare from "./FitMentDietCare";
-
 import { useInView } from "react-intersection-observer";
 import fitMentData from "./fitMentData";
 

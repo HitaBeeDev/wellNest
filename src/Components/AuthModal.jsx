@@ -1,11 +1,11 @@
-import img1 from "../assets/img1.png";
+import image1 from "../assets/image1.png";
 
 export default function AuthModal({ isOpen, onClose }) {
   if (!isOpen) return null;
   return (
     <div className="fixed inset-0 m-6 sm:m-10 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
       <div className="lg:p-12 p-10 bg-white rounded-md relative flex flex-row gap-12">
-        <img src={img1} alt="People" className="hidden lg:block lg:h-96" />
+        <img src={image1} alt="People" className="hidden lg:block lg:h-96" />
 
         <div className="flex flex-col gap-1">
           <button className="absolute top-6 right-6" onClick={onClose}>

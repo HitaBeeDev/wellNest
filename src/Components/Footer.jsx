@@ -1,4 +1,4 @@
-import logoFooter from "../assets/logow.png";
+import logoFooter from "../assets/logoFooter.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import socialLinks from "./socialLinks";
 import navLinks from "./navLinks";

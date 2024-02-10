@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
 import teamMembers from "./teamMemberDatas";
 
 const itemHeight = 130;

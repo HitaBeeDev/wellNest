@@ -1,5 +1,5 @@
 import arrow from "../assets/arrow.png";
-import bg from "../assets/b3.jpg";
+import backgroundImage7 from "../assets/backgroundImage7.jpg";
 import YogaTags from "./YogaTags";
 import YogaUserCard from "./YogaUserCard";
 import { motion } from "framer-motion";
@@ -8,7 +8,7 @@ export default function YogaSessions() {
   return (
     <div
       className="bg-cover bg-center rounded-3xl flex flex-col lg:flex-row justify-between content-center lg:p-12 p-6"
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(${backgroundImage7})` }}
     >
       <motion.div
         className="lg:w-9/12 w-fit flex flex-col gap-6 justify-center"

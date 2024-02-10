@@ -1,10 +1,10 @@
-import wellNessBg from "../Assets/bg11.jpg";
+import backgroundImage3 from "../Assets/backgroundImage3.jpg";
 
 export default function AboutWellNest() {
   return (
     <div
       className="bg-cover bg-center bg-color4/80 rounded-3xl lg:p-12 p-10 mb-5 lg:mb-0"
-      style={{ backgroundImage: `url(${wellNessBg})` }}
+      style={{ backgroundImage: `url(${backgroundImage3})` }}
     >
       <h3 className="text-color6 font-thin text-4xl">About Wellnest</h3>
       <p className="mt-9 text-sm text-color2 leading-loose">

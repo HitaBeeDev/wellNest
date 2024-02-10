@@ -1,6 +1,6 @@
 import { useState } from "react";
 import faqData from "./faqData";
-import background1 from "../Assets/background1.jpg";
+import backgroundImage1 from "../Assets/backgroundImage1.jpg";
 import faqArrow from "../assets/faqArrow.png";
 
 export default function FAQ() {
@@ -16,7 +16,7 @@ export default function FAQ() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-75"
           style={{
-            backgroundImage: `url(${background1})`,
+            backgroundImage: `url(${backgroundImage1})`,
           }}
         ></div>
         <div className="relative">
