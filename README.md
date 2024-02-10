@@ -1,5 +1,5 @@
 
-# SkyQuest: WellNest: Wellness and Self-Care Platform
+# WellNest: Wellness and Self-Care Platform
 
 WellNest is a wellness platform built with React, Tailwind CSS, Framer Motion, and Swiper. It offers personalized plans, self-care tips, and mindfulness exercises through a responsive and engaging design. Aimed at boosting mental, physical, and emotional health, WellNest makes it easy for users to focus on their well-being with smooth animations and simple interfaces.
 
