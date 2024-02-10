@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceData from "./ServiceData";
 import checked from "../assets/checked.png";
-import pricingBg from "../Assets/bg8.jpg";
+import bg8 from "../Assets/bg8.jpg";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -46,7 +46,7 @@ export default function Pricing() {
         {ServiceData.map((service) => (
           <SwiperSlide key={service.id}>
             <div
-              style={{ backgroundImage: `url(${pricingBg})` }}
+              style={{ backgroundImage: `url(${bg8})` }}
               id="pricing"
               className="backdrop-blur-xl shadow-lg rounded-2xl flex flex-col justify-between h-96 lg:p-10 p-6 cursor-pointer mb-16 items-center"
             >
