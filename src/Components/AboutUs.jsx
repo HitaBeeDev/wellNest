@@ -1,5 +1,5 @@
 import AboutTeamMotion from "./AboutTeamMotion";
-import teamBg from "../Assets/teamBg8.jpg";
+import teamBg8 from "../Assets/teamBg8.jpg";
 import AboutWellNest from "./AboutWellNest";
 import qouteBg from "../Assets/bg1.jpg";
 import { motion } from "framer-motion";
@@ -31,7 +31,7 @@ export default function AboutUs() {
     >
       <motion.div
         className="lg:bg-cover lg:bg-center hidden rounded-3xl p-5 w-fit lg:flex justify-center"
-        style={{ backgroundImage: `url(${teamBg})` }}
+        style={{ backgroundImage: `url(${teamBg8})` }}
       >
         <AboutTeamMotion />
       </motion.div>
