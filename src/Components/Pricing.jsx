@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceData from "./ServiceData";
 import checked from "../assets/checked.png";
-import backgroundImage6 from "../Assets/backgroundImage6.jpg";
+import backgroundImage6 from "../assets/backgroundImage6.jpg";
 
 import "swiper/css";
 import "swiper/css/pagination";

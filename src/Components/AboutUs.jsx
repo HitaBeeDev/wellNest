@@ -1,6 +1,6 @@
 import AboutTeamMotion from "./AboutTeamMotion";
 import backgroundImage1 from "../assets/backgroundImage1.jpg";
-import backgroundImage2 from "../Assets/backgroundImage2.jpg";
+import backgroundImage2 from "../assets/backgroundImage2.jpg";
 import AboutWellNest from "./AboutWellNest";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";

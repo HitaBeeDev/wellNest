@@ -1,4 +1,4 @@
-import backgroundImage3 from "../Assets/backgroundImage3.jpg";
+import backgroundImage3 from "../assets/backgroundImage3.jpg";
 
 export default function AboutWellNest() {
   return (
