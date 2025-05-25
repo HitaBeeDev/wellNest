@@ -1,0 +1,22 @@
+WellNest is a wellness platform built with React, Tailwind CSS, Framer Motion, and Swiper.
+It offers personalized plans, self-care tips, and mindfulness exercises through a responsive and engaging design.
+
+Aimed at boosting mental, physical, and emotional health, WellNest makes it easy for users to focus on their well-being with smooth animations and simple interfaces.
+
+✨ Features:
+Custom Animations: Integrates Framer Motion to bring smooth, engaging animations to the user interface.
+
+Draggable Slides: Utilizes Swiper and Framer Motion to create responsive, draggable slides for easy navigation.
+
+Collapsible Cards: Interactive cards that expand to reveal more information upon clicking.
+
+Responsive Layout: Looks great and works on all devices thanks to Tailwind CSS.
+
+🛠 Technologies Used:
+React: For building the UI.
+
+Tailwind CSS: For utility-first styling and responsive design.
+
+Material-UI: UI tools for a refined user experience.
+
+Framer Motion: For animations.
