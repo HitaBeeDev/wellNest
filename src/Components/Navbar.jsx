@@ -54,9 +54,10 @@ export default function Navbar() {
             className="text-color2 p-1 m-5 lg:p-1 lg:m-1 hover:scale-105 hover:border-b-2 hover:border-color2 transition duration-800"
           >
             <motion.a
+              href={`#${link.id}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection(link.id)}
+              onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }}
             >
               {link.name}
             </motion.a>
@@ -64,26 +65,34 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center">
         <div>
-          <img
-            src={User}
-            alt="User Profile"
-            className="w-6 h-6 hover:scale-110 transition duration-500"
+          <button
             onClick={toggleModal}
-          />
+            aria-label="Open sign in modal"
+            className="flex items-center hover:scale-110 transition duration-500"
+          >
+            <img src={User} alt="" aria-hidden="true" className="w-6 h-6" />
+          </button>
           <AuthModal isOpen={isModalOpen} onClose={toggleModal} />
         </div>
 
-        <motion.img
-          src={Menu}
-          alt="Menu Button"
-          whileHover={{ scale: 1.1 }}
-          animate={{ rotate: showMenu ? 90 : 0 }}
-          transition={{ duration: 0.2 }}
-          className="lg:hidden w-5 lg:w-28 hover:scale-110 transition duration-500"
+        <button
           onClick={toggleMenu}
-        />
+          aria-label={showMenu ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={showMenu}
+          className="lg:hidden flex items-center hover:scale-110 transition duration-500"
+        >
+          <motion.img
+            src={Menu}
+            alt=""
+            aria-hidden="true"
+            whileHover={{ scale: 1.1 }}
+            animate={{ rotate: showMenu ? 90 : 0 }}
+            transition={{ duration: 0.2 }}
+            className="w-5"
+          />
+        </button>
       </div>
     </motion.nav>
   );

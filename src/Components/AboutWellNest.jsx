@@ -6,7 +6,7 @@ export default function AboutWellNest() {
       className="bg-cover bg-center bg-color4/80 rounded-3xl lg:p-12 p-10 mb-5 lg:mb-0"
       style={{ backgroundImage: `url(${backgroundImage3})` }}
     >
-      <h3 className="text-color6 font-thin text-4xl">About Wellnest</h3>
+      <h2 className="text-color6 font-thin text-4xl">About Wellnest</h2>
       <p className="mt-9 text-sm text-color2 leading-loose">
         Welcome to WellNest, your nurturing sanctuary for holistic well-being!
         Dive into personalized yoga, fitness plans, mental wellness therapy, and

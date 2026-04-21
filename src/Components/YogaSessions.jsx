@@ -34,22 +34,23 @@ export default function YogaSessions() {
           your well-being and inner peace.
         </motion.p>
 
-        <motion.div
+        <motion.button
           className="flex flex-row justify-center items-center gap-2 bg-white lg:w-2/12 w-full lg:h-8 h-10 rounded-full hover:bg-color6 transition-all"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <button className="text-sm">Start Program!</button>
+          <span className="text-sm">Start Program!</span>
           <motion.img
             src={arrow}
-            alt="arrow icon"
+            alt=""
+            aria-hidden="true"
             className="w-3 h-3 mt-1"
             initial={{ rotate: -90, opacity: 0 }}
             animate={{ rotate: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
           />
-        </motion.div>
+        </motion.button>
       </motion.div>
 
       <motion.div

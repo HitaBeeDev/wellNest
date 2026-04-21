@@ -14,19 +14,21 @@ export default function App() {
       <div className="pt-10 pl-10 pr-10 overflow-hidden scroll-smooth xl:pl-28 xl:pr-28 xl:pt-12">
         <Navbar />
 
-        <OpenCards />
+        <main>
+          <OpenCards />
 
-        <AboutUs />
+          <AboutUs />
 
-        <OurServices />
+          <OurServices />
 
-        <Pricing />
+          <Pricing />
 
-        <FAQ />
+          <FAQ />
 
-        <Testimonials />
+          <Testimonials />
 
-        <ContactUs />
+          <ContactUs />
+        </main>
       </div>
       <Footer />
     </div>
