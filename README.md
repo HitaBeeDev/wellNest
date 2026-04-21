@@ -8,8 +8,8 @@ WellNest is a wellness platform built with React, Tailwind CSS, Framer Motion, a
 
 | Metric | Score |
 |---|---|
-| Lighthouse Performance | 99 |
-| Accessibility | 96 |
+| Lighthouse Performance | 100 |
+| Accessibility | 91 |
 | SEO | 100 |
 
 ## Features
