@@ -3,9 +3,6 @@
 
 WellNest is a wellness platform built with React, Tailwind CSS, Framer Motion, and Swiper. It offers personalized yoga sessions, fitness plans, mental wellness therapy, and diet advice through a responsive and beautifully animated interface.
 
-<p align="center">
-  <img src="docs/assets/preview.png" alt="WellNest app preview" width="800" />
-</p>
 
 ## Performance
 
