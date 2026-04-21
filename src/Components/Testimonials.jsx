@@ -12,7 +12,7 @@ export default function Testimonials() {
     >
       <div className="bg-color8 col-span-2 rounded-xl shadow-xl p-5">
         <div className="flex flex-row gap-3 items-center">
-          <img className="w-10 h-10 rounded-md" src={user1} />
+          <img className="w-10 h-10 rounded-md" src={user1} alt="Samantha Lee" loading="lazy" />
           <div className="flex flex-col gap-1">
             <p className="text-sm font-[400] text-color1">Samantha Lee</p>
             <p className="text-xs text-color1 opacity-50">
@@ -43,7 +43,7 @@ export default function Testimonials() {
 
       <div className="bg-color4 rounded-xl shadow-xl p-5">
         <div className="flex flex-row gap-3 items-center">
-          <img className="w-10 h-10 rounded-md" src={user2} />
+          <img className="w-10 h-10 rounded-md" src={user2} alt="Alex Johnson" loading="lazy" />
           <div className="flex flex-col gap-1">
             <p className="text-sm font-[400] text-color7">Alex Johnson</p>
             <p className="text-xs text-color7 opacity-50">
@@ -68,7 +68,7 @@ export default function Testimonials() {
 
       <div className="lg:row-span-3 bg-color7 rounded-xl shadow-xl h-fit p-5">
         <div className="flex flex-row gap-3 items-center">
-          <img className="w-10 h-10 rounded-md" src={user3} />
+          <img className="w-10 h-10 rounded-md" src={user3} alt="Jordan Kim" loading="lazy" />
           <div className="flex flex-col gap-1">
             <p className="text-sm font-[400] text-color1">Jordan Kim</p>
             <p className="text-xs text-color1 opacity-50">Gold Subscription</p>
@@ -101,7 +101,7 @@ export default function Testimonials() {
 
       <div className="bg-color5 rounded-xl shadow-xl p-5">
         <div className="flex flex-row gap-3 items-center">
-          <img className="w-10 h-10 rounded-md" src={user4} />
+          <img className="w-10 h-10 rounded-md" src={user4} alt="Chris Rivera" loading="lazy" />
           <div className="flex flex-col gap-1">
             <p className="text-sm font-[400] text-color7">Chris Rivera</p>
             <p className="text-xs text-color7 opacity-50">
@@ -126,7 +126,7 @@ export default function Testimonials() {
 
       <div className="col-span-2 rounded-xl shadow-xl p-5 bg-color6">
         <div className="flex flex-row gap-3 items-center">
-          <img className="w-10 h-10 rounded-md" src={user5} />
+          <img className="w-10 h-10 rounded-md" src={user5} alt="Morgan Bailey" loading="lazy" />
           <div className="flex flex-col gap-1">
             <p className="text-sm font-[400] text-color7">Morgan Bailey</p>
             <p className="text-xs text-color7 opacity-50">Diet Advice</p>

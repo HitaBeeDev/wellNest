@@ -23,8 +23,10 @@ export default function ContactUsForm() {
         <Input label="Name" id="name" required />
         <Input label="Email" id="email" type="email" required />
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-medium text-color4">Message</label>
+          <label htmlFor="message" className="text-xs font-medium text-color4">Message</label>
           <input
+            id="message"
+            name="message"
             className="mt-2 pl-3 pb-28 rounded-md text-xs h-40"
             type="text"
             placeholder="Share your thoughts with us..."

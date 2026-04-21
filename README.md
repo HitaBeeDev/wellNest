@@ -1,30 +1,47 @@
 
 # WellNest: Wellness and Self-Care Platform
 
-WellNest is a wellness platform built with React, Tailwind CSS, Framer Motion, and Swiper. It offers personalized plans, self-care tips, and mindfulness exercises through a responsive and engaging design. Aimed at boosting mental, physical, and emotional health, WellNest makes it easy for users to focus on their well-being with smooth animations and simple interfaces.
+WellNest is a wellness platform built with React, Tailwind CSS, Framer Motion, and Swiper. It offers personalized yoga sessions, fitness plans, mental wellness therapy, and diet advice through a responsive and beautifully animated interface.
 
-## Features:
-- Custom Animations: Integrates Framer Motion to bring smooth, engaging animations to the user interface, enhancing the interactive experience.
-- Draggable Slides: Utilizes Swiper and Framer Motion to create responsive, draggable slides for easy navigation through content.
-- Collapsible Cards: Implements interactive cards that expand to reveal more information upon clicking, providing a neat, organized view of details.
-- Responsive Layout: Ensures the platform looks great and functions seamlessly across all devices, thanks to Tailwind CSS.
-  
-## Technologies Used:
-- React: For building the user interface.
-- Tailwind CSS: For utility-first styling and responsive design.
-- Material-UI: Provides a comprehensive suite of UI tools for a refined user experience.
-- Framer Motion: Adds smooth and sophisticated animations.
-  
-## Installation
+<p align="center">
+  <img src="docs/assets/preview.png" alt="WellNest app preview" width="800" />
+</p>
 
-To get started with wellNest:
+## Performance
+
+| Metric | Score |
+|---|---|
+| Lighthouse Performance | 99 |
+| Accessibility | 96 |
+| SEO | 100 |
+
+## Features
+
+- **Collapsible Service Cards** — Interactive cards expand on click to reveal service details, with smooth Framer Motion transitions.
+- **Draggable Testimonial Slides** — Swiper-powered carousel lets users swipe through client reviews naturally.
+- **Animated Sections** — Scroll-triggered entrance animations via Framer Motion and Intersection Observer keep the experience lively.
+- **Auth Modal** — Sign-in overlay with clean form validation, accessible labels, and keyboard support.
+- **Contact Form** — Fully labeled, accessible contact form with name, email, and message fields.
+- **Responsive Layout** — Tailwind CSS grid/flex layout adapts seamlessly from mobile to wide desktop.
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React 18 | UI component architecture |
+| Vite | Fast dev server and optimized builds |
+| Tailwind CSS | Utility-first styling and responsive design |
+| Framer Motion | Scroll-triggered and interactive animations |
+| Swiper | Touch-friendly draggable carousels |
+| Material-UI | Avatar components and UI primitives |
+
+## Getting Started
 
 ```bash
 git clone https://github.com/HitaBeeDev/wellNest.git
 cd wellNest
 npm install
+npm run dev
 ```
-    
-```bash
-npm start
-```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.

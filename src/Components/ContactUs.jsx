@@ -14,7 +14,7 @@ export default function ContactUs() {
 
       <div className="hidden lg:grid grid-rows-3 gap-10 justify-center">
         <div className="row-span-2">
-          <img className="w-96" src={contactUs} />
+          <img className="w-96" src={contactUs} alt="Contact us illustration" loading="lazy" />
         </div>
 
         <div className="row-span-1">

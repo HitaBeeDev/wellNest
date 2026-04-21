@@ -8,7 +8,7 @@ export default function AuthModal({ isOpen, onClose }) {
         <img src={image1} alt="People" className="hidden lg:block lg:h-96" />
 
         <div className="flex flex-col gap-1">
-          <button className="absolute top-6 right-6" onClick={onClose}>
+          <button className="absolute top-6 right-6" onClick={onClose} aria-label="Close modal">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
